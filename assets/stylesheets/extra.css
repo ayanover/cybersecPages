@@ -1,0 +1,150 @@
+/* Custom CSS for Advanced Cybersecurity Course */
+
+/* Root variables for custom theming */
+:root {
+  --cybersec-primary: #3f51b5;
+  --cybersec-accent: #673ab7;
+  --cybersec-success: #4caf50;
+  --cybersec-warning: #ff9800;
+  --cybersec-danger: #f44336;
+  --cybersec-info: #2196f3;
+}
+
+/* Enhanced code blocks */
+.highlight {
+  border-radius: 4px;
+  margin: 1em 0;
+}
+
+/* Custom admonition styling */
+.admonition {
+  border-left: 4px solid;
+  border-radius: 4px;
+  margin: 1.5625em 0;
+  padding: 0.6rem 1rem;
+}
+
+.admonition.note {
+  border-color: var(--cybersec-info);
+}
+
+.admonition.warning {
+  border-color: var(--cybersec-warning);
+}
+
+.admonition.danger {
+  border-color: var(--cybersec-danger);
+}
+
+.admonition.success {
+  border-color: var(--cybersec-success);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+
+table th {
+  font-weight: bold;
+  background-color: rgba(63, 81, 181, 0.1);
+}
+
+/* Keyboard key styling */
+kbd {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+  color: #333;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.85em;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+[data-md-color-scheme="slate"] kbd {
+  background-color: #424242;
+  border-color: #666;
+  color: #fff;
+}
+
+/* Enhanced navigation breadcrumbs */
+.md-path {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Code copy button enhancement */
+.md-clipboard {
+  transition: opacity 0.2s;
+}
+
+.md-clipboard:hover {
+  opacity: 1;
+}
+
+/* Custom tag styling */
+.md-tag {
+  background-color: var(--cybersec-primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  margin: 0 4px;
+}
+
+/* Mermaid diagram styling */
+.mermaid {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+/* Enhanced table of contents */
+.md-sidebar--secondary {
+  position: sticky;
+  top: 3.6rem;
+}
+
+/* Custom footer styling */
+.md-footer-meta {
+  background-color: var(--md-footer-bg-color);
+}
+
+/* Improved search results */
+.md-search-result__article {
+  padding: 1rem;
+}
+
+.md-search-result__title {
+  font-weight: bold;
+}
+
+/* Dark mode specific adjustments */
+[data-md-color-scheme="slate"] {
+  --md-code-bg-color: #1e1e1e;
+}
+
+[data-md-color-scheme="slate"] .highlight {
+  background-color: var(--md-code-bg-color);
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 76.1875em) {
+  .md-nav--primary .md-nav__title {
+    background-color: var(--cybersec-primary);
+  }
+}
+
+/* Print styling */
+@media print {
+  .md-header,
+  .md-footer,
+  .md-sidebar,
+  .md-nav {
+    display: none;
+  }
+}
