@@ -1,15 +1,15 @@
 site_name: Advanced Cybersecurity Course
-site_url: https://yourusername.github.io/cybersec
-site_author: Your Name
+site_url: https://ayanover.github.io/cybersec
+site_author: Aver
 site_description: Comprehensive advanced cybersecurity training covering offensive security, defensive security, application security, and cloud infrastructure security
 
 # Repository
-repo_name: yourusername/cybersec
+repo_name: ayanover/cybersec
 repo_url: https://github.com/yourusername/cybersec
 edit_uri: edit/main/docs/
 
 # Copyright
-copyright: Copyright &copy; 2025 Your Name
+copyright: Copyright &copy; 2025 Aver
 
 # Theme Configuration
 theme:
